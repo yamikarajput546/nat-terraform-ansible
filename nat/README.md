@@ -7,12 +7,12 @@ export TF_VAR_aws_secret_key=""
 export TF_VAR_aws_region=""
 ```
 
-## using profile
+## Using profile
 
 ```
 aws configure --profile yamika
 ```
-## make changes in provider.tf
+## Make changes in provider.tf
 ```
 provider "aws" {
     profile = "yamika"
@@ -20,7 +20,7 @@ provider "aws" {
 }
 ```
 
-## for instance2 
+## For instance2 
 
 create a key-pair with .pem extensionand pass the local path to private_key_path
 
@@ -30,13 +30,13 @@ create a key-pair with .pem extensionand pass the local path to private_key_path
 terraform init
 ```
 
-## apply the configuration file
+## Apply the configuration file
 
 ```
 terraform apply
 ```
 
-## destroying the provisioned infra
+## Destroying the provisioned infra
 
 ```
 terraform destroy
